@@ -1,5 +1,3 @@
-// Задание 7.6.1
-
 let word = 'Сантимент';
 let lowerWord = word.toLowerCase();
 let reverseWord = lowerWord.split('').reverse().join('');
