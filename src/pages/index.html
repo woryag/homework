@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="../scripts/script.js"></script>
+    <link rel="stylesheet" href="../style/style.css" />
+    <link rel="icon" href="../img/B.png" />
+    <title>Bookshop</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navigation">
+        <div class="navigation__logo">
+          <img src="../img/Bookshop.svg" alt="LOGO" />
+        </div>
+        <div class="navigation__links">
+          <a class="navigation__link active" href="#">BOOKS</a>
+          <a class="navigation__link" href="#">AUDIOBOOKS</a>
+          <a class="navigation__link" href="#">STATIONARY & GIFTS</a>
+          <a class="navigation__link" href="#">BLOG</a>
+        </div>
+        <div class="navigation__buttons">
+          <button class="navigation__button" type="button">
+            <img class="user" src="../img/user.png" alt="authorization" />
+          </button>
+          <button class="navigation__button" type="button">
+            <img class="search" src="../img/search.png" alt="search" />
+          </button>
+          <button class="navigation__button" type="button">
+            <img class="shop-bag" src="../img/shop bag.png" alt="shop bag" />
+            <span class="cart-count"></span>
+          </button>
+        </div>
+      </nav>
+    </header>
+    <main class="main">
+      <div class="container">
+        <div class="slider">
+          <img
+            class="slider__banner active"
+            src="../img/banner.jpg"
+            alt="Banner"
+          />
+          <img class="slider__banner" src="../img/banner 2.jpg" alt="Banner2" />
+          <img class="slider__banner" src="../img/banner 3.jpg" alt="Banner3" />
+
+          <a class="main__link first-link" href="#">
+            CHANGE <br />
+            OLD BOOK <br />
+            ON NEW
+            <img src="../img/arrow.png" alt="arrow" />
+          </a>
+
+          <a class="main__link second-link" href="#"
+            >TOP <br />
+            100 <br />
+            BOOKS <br />
+            2022
+            <img src="../img/arrow.png" alt="arrow" />
+          </a>
+        </div>
+        <div class="slider-dots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+      <div class="main__content">
+        <div class="catalog__categories">
+          <a
+            class="catalog__link active"
+            onclick="event.preventDefault();"
+            href=""
+            ><span class="dot-link active"></span>Architecture</a
+          >
+          <a class="catalog__link" onclick="event.preventDefault();" href="#"
+            ><span class="dot-link"></span>Art & Fashion</a
+          >
+          <a class="catalog__link" onclick="event.preventDefault();" href="#"
+            ><span class="dot-link"></span>Blography</a
+          >
+          <a class="catalog__link" onclick="event.preventDefault();" href="#"
+            ><span class="dot-link"></span>Bussines</a
+          >
+          <a class="catalog__link" onclick="event.preventDefault();" href="#"
+            ><span class="dot-link"></span>Crafts & Hobbies</a
+          >
+          <a class="catalog__link" onclick="event.preventDefault();" href="#"
+            ><span class="dot-link"></span>Drama</a
+          >
+          <a class="catalog__link" onclick="event.preventDefault();" href="#"
+            ><span class="dot-link"></span>Fiction</a
+          >
+          <a class="catalog__link" onclick="event.preventDefault();" href="#"
+            ><span class="dot-link"></span>Food & Drink</a
+          >
+          <a class="catalog__link" onclick="event.preventDefault();" href="#"
+            ><span class="dot-link"></span>Health & Welbeing</a
+          >
+          <a class="catalog__link" onclick="event.preventDefault();" href="#"
+            ><span class="dot-link"></span>History & Politics</a
+          >
+          <a class="catalog__link" onclick="event.preventDefault();" href="#"
+            ><span class="dot-link"></span>Humor</a
+          >
+          <a class="catalog__link" onclick="event.preventDefault();" href="#"
+            ><span class="dot-link"></span>Poetry</a
+          >
+          <a class="catalog__link" onclick="event.preventDefault();" href="#"
+            ><span class="dot-link"></span>Psychology</a
+          >
+          <a class="catalog__link" onclick="event.preventDefault();" href="#"
+            ><span class="dot-link"></span>Science</a
+          >
+          <a class="catalog__link" onclick="event.preventDefault();" href="#"
+            ><span class="dot-link"></span>Technology</a
+          >
+          <a class="catalog__link" onclick="event.preventDefault();" href="#"
+            ><span class="dot-link"></span>Travel & Maps</a
+          >
+        </div>
+        <div class="books-cards"></div>
+      </div>
+      <div class="block-btn">
+        <button class="main__button">LOAD MORE</button>
+      </div>
+    </main>
+  </body>
+</html>

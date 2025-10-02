@@ -1,0 +1,370 @@
+$main-color: rgba(255, 255, 255, 1);
+$color-text: rgba(92, 106, 121, 1);
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat";
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $main-color;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.main {
+  padding-top: 7.25rem;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 7.25rem;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  background-color: $main-color;
+  z-index: 3;
+
+  & > img {
+    width: 8rem;
+    height: 1.8rem;
+  }
+}
+
+.navigation__links {
+  display: flex;
+  flex-direction: row;
+  gap: 2.5rem;
+  font-size: 0.63rem;
+  font-weight: 700;
+
+  .navigation__link {
+    color: $color-text;
+    cursor: pointer;
+  }
+
+  .navigation__link:hover {
+    color: rgb(38, 44, 51);
+  }
+}
+
+.navigation__buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 2.5rem;
+
+  & > .navigation__button {
+    background-color: $main-color;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+// .container {
+// }
+
+.slider {
+  width: 70rem;
+  margin: 0 auto;
+  height: 702px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 0;
+  position: relative;
+
+  & > img {
+    display: none;
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+  }
+
+  .active {
+    display: block;
+  }
+}
+
+.main__link {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  z-index: 1;
+  position: absolute;
+  color: rgba(28, 42, 57, 1);
+  font-weight: 700;
+  font-size: 18px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+
+  & > img {
+    width: 55px;
+  }
+}
+
+.first-link {
+  width: 149px;
+  height: 204px;
+  background-color: #9e98dc;
+  right: -80px;
+  top: 79px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+
+.second-link {
+  width: 137px;
+  height: 273px;
+  background-color: rgba(255, 143, 230, 1);
+  top: 359px;
+  right: -35%;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+
+.slider-dots {
+  display: flex;
+  flex-direction: row;
+  gap: 0.62rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+
+  & > .dot {
+    width: 0.75rem;
+    height: 0.75rem;
+    background-color: rgba(239, 238, 246, 1);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+
+  & > .dot:hover {
+    background-color: rgba(158, 152, 220, 1);
+    transform: slice(1.2);
+  }
+
+  & > .active {
+    background-color: rgba(158, 152, 220, 1);
+  }
+}
+
+.catalog__categories {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+  background-color: rgba(239, 238, 246, 1);
+  color: $color-text;
+  font-weight: 500;
+  font-size: 12px;
+  width: 26rem;
+  padding: 2.8rem 8.62rem 5rem 9.13rem;
+  margin-top: 6.5rem;
+  z-index: 1;
+  max-height: 44.3rem;
+
+  & > .active {
+    font-weight: 700;
+    font-size: 1rem;
+    color: rgba(28, 42, 57, 1);
+  }
+}
+
+.dot-link {
+  display: inline-block;
+  width: 0.37rem;
+  height: 0.37rem;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+  background-color: transparent;
+  transition: background-color 0.3s, transform 0.2s;
+  vertical-align: middle;
+}
+
+.catalog__link.active .dot-link {
+  background-color: rgba(117, 106, 211, 1);
+  transform: scale(1.2);
+}
+
+.block-btn {
+  display: flex;
+  justify-content: center;
+
+  .main__button {
+    margin-top: 6rem;
+    margin-bottom: 4.62rem;
+    width: 11rem;
+    height: 3rem;
+    background-color: $main-color;
+    color: rgba(76, 61, 178, 1);
+    font-weight: 700;
+    font-size: 0.5rem;
+    border: 1px solid rgba(76, 61, 178, 1);
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .main__button:hover {
+    background-color: rgb(230, 230, 230);
+  }
+}
+
+.main__content {
+  display: flex;
+  flex-direction: row;
+}
+
+.books-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4.75rem;
+  justify-content: center;
+  margin-top: 151px;
+  margin-left: -60px;
+  z-index: 2;
+}
+
+.book-card {
+  background-color: $main-color;
+  border: none;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+  width: 424px;
+  padding: 49px 0 48px;
+  max-height: 18.75rem;
+}
+
+.book-card__img img {
+  width: 212px;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+}
+
+.book-card__img {
+  width: 212px;
+  height: 300px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.authors {
+  font-family: "Open Sans";
+  font-size: 0.62rem;
+  font-weight: 400;
+  color: $color-text;
+  line-clamp: 3;
+}
+
+.desc {
+  font-family: "Open Sans";
+  font-size: 0.62rem;
+  font-weight: 400;
+  color: $color-text;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  white-space: normal;
+}
+
+.title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: rgba(28, 42, 57, 1);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  white-space: normal;
+}
+
+.buy-btn {
+  width: 11rem;
+  height: 3rem;
+  background-color: $main-color;
+  color: rgba(76, 61, 178, 1);
+  font-weight: 700;
+  font-size: 0.5rem;
+  border: 1px solid rgba(76, 61, 178, 1);
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.book-card__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 1rem;
+}
+
+.cap {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.shop-bag {
+  position: relative;
+}
+
+.cart-count {
+  position: absolute;
+  top: 58px;
+  left: 1685px;
+  background-color: red;
+  border-radius: 50%;
+  padding: 4px;
+  width: 20px;
+  height: 20px;
+  font-size: 10px;
+  color: white;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+@media (max-width: 720px) {
+  .navigation {
+    max-width: 100%;
+    justify-content: center;
+    gap: 12rem;
+  }
+
+  .catalog__categories {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding: 30px;
+  }
+
+  .slider {
+    width: 60rem;
+  }
+
+  .second-link {
+    top: 359px;
+    right: -20%;
+    padding-left: 20px;
+    padding-bottom: 20px;
+  }
+
+  .books-cards {
+    margin-left: -10px;
+    z-index: 2;
+  }
+}

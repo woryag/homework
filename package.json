@@ -1,0 +1,69 @@
+{
+  "name": "homework",
+  "version": "1.0.0",
+  "description": "\"# homework\" \r #\u0000 \u0000S\u0000l\u0000i\u0000d\u0000e\u0000r\u0000-\u0000w\u0000i\u0000t\u0000h\u0000-\u0000p\u0000h\u0000o\u0000t\u0000o\u0000\r\u0000 \u0000",
+  "scripts": {
+    "start": "react-scripts start",
+    "build-scripts": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "prefix:css": "postcss src/base.css -o src/base.prefixed.css",
+    "compile-css": "sass src/sass/style.scss src/style/style.css --watch",
+    "build": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/woryag/homework.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/woryag/homework/issues"
+  },
+  "homepage": "https://github.com/woryag/homework#readme",
+  "devDependencies": {
+    "@babel/preset-react": "^7.27.1",
+    "@eslint/js": "^9.36.0",
+    "@types/react": "^19.1.13",
+    "@types/react-dom": "^19.1.9",
+    "autoprefixer": "^10.4.21",
+    "css-loader": "^7.1.2",
+    "css-minimizer-webpack-plugin": "^7.0.2",
+    "eslint": "^8.57.1",
+    "globals": "^16.4.0",
+    "html-loader": "^5.1.0",
+    "html-webpack-plugin": "^5.6.4",
+    "mini-css-extract-plugin": "^2.9.4",
+    "postcss-cli": "^11.0.1",
+    "pug": "^2.0.4",
+    "pug-loader": "^2.4.0",
+    "react-scripts": "5.0.1",
+    "sass": "^1.92.1",
+    "sass-loader": "^16.0.5",
+    "style-loader": "^4.0.0",
+    "stylelint": "^16.24.0",
+    "stylelint-webpack-plugin": "^5.0.1",
+    "terser-webpack-plugin": "^5.3.14",
+    "ts-loader": "^9.5.4",
+    "typescript": "^4.9.5",
+    "webpack": "^5.101.3",
+    "webpack-cli": "^6.0.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "dependencies": {
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  }
+}
